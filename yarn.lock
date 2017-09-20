@@ -3400,8 +3400,8 @@ gatsby-module-loader@^1.0.5:
     loader-utils "^0.2.16"
 
 gatsby-plugin-manifest@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.7.tgz#488def7ac822c960912ba361214baef8f5b074d9"
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.8.tgz#8c155cd2aed54759554c25bf9efb4a2c48de6429"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -3414,12 +3414,12 @@ gatsby-plugin-offline@^1.0.9:
     sw-precache "^5.0.0"
 
 gatsby-plugin-preact@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-1.0.6.tgz#69545ecf7e559dc19b972c08e4cd5c03656815eb"
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-1.0.11.tgz#63afec7c4b73b2be8c86ab2aab4ca92a177da7f4"
   dependencies:
     babel-runtime "^6.26.0"
-    preact "^8.1.0"
-    preact-compat "^3.16.0"
+    preact "^8.2.5"
+    preact-compat "^3.17.0"
 
 gatsby-plugin-react-helmet@^1.0.6:
   version "1.0.6"
@@ -3429,8 +3429,8 @@ gatsby-plugin-react-helmet@^1.0.6:
     react-helmet "^5.1.3"
 
 gatsby-plugin-sass@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-1.0.10.tgz#8e2646254237a34e9f8f9521e309ae2a5377384f"
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-1.0.12.tgz#d0c721a764740dc2f6196efcf6c8c026bea4d5c6"
   dependencies:
     babel-runtime "^6.26.0"
     extract-text-webpack-plugin "^1.0.1"
@@ -3439,9 +3439,9 @@ gatsby-plugin-sass@^1.0.10:
     sass-loader "^4.1.1"
     webpack "^1.13.3"
 
-gatsby-plugin-sharp@^1.6.6:
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.6.tgz#654ef59534fc82321d9d13bdb2a9c838134b898f"
+gatsby-plugin-sharp@^1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.7.tgz#688e22dfc6f3341fcb8efebed1bae5e05ff02fd4"
   dependencies:
     async "^2.1.2"
     babel-runtime "^6.26.0"
@@ -3452,6 +3452,14 @@ gatsby-plugin-sharp@^1.6.6:
     lodash "^4.17.4"
     progress "^1.1.8"
     sharp "^0.17.3"
+
+gatsby-react-router-scroll@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-1.0.1.tgz#2e0132807273e544f05bed016645b6e2dfe08c48"
+  dependencies:
+    babel-runtime "^6.26.0"
+    scroll-behavior "^0.9.1"
+    warning "^3.0.0"
 
 gatsby-remark-copy-linked-files@^1.5.7:
   version "1.5.7"
@@ -3465,12 +3473,12 @@ gatsby-remark-copy-linked-files@^1.5.7:
     unist-util-visit "^1.1.1"
 
 gatsby-remark-images@^1.5.10:
-  version "1.5.10"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.10.tgz#a7277b63e1e74634c57e6508b57c21abdfb48279"
+  version "1.5.11"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.11.tgz#6088d4903e16969bfacc097fe951569937c6cf64"
   dependencies:
     babel-runtime "^6.26.0"
     cheerio "^1.0.0-rc.2"
-    gatsby-plugin-sharp "^1.6.6"
+    gatsby-plugin-sharp "^1.6.7"
     image-size "^0.5.1"
     is-relative-url "^2.0.0"
     lodash "^4.17.4"
@@ -3478,8 +3486,8 @@ gatsby-remark-images@^1.5.10:
     unist-util-select "^1.5.0"
 
 gatsby-source-filesystem@^1.4.11:
-  version "1.4.11"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.4.11.tgz#edad7a224fcb0c99bf8075a9ffc069fe1f2358cd"
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.1.tgz#7aae50bdd75cad01641468bc82a99976f8c9de3b"
   dependencies:
     babel-cli "^6.26.0"
     babel-runtime "^6.26.0"
@@ -3493,8 +3501,8 @@ gatsby-source-filesystem@^1.4.11:
     slash "^1.0.0"
 
 gatsby-transformer-remark@^1.7.6:
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.6.tgz#2ebe0a21f29da5ced7777c70bb9aca3ad7e1c216"
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.9.tgz#fe1d2867aca54c62e9bef33c73cc19e2a90674e0"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -3510,8 +3518,8 @@ gatsby-transformer-remark@^1.7.6:
     unist-util-visit "^1.1.1"
 
 gatsby@^1.9.21:
-  version "1.9.21"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.21.tgz#52e3ba2bbce1ba43a325e8bc83611c50c71f9f56"
+  version "1.9.40"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.40.tgz#e4c713ec9ad849d4f5e455e595f941abd5a05ede"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -3555,6 +3563,7 @@ gatsby@^1.9.21:
     fs-extra "^4.0.1"
     gatsby-1-config-css-modules "^1.0.4"
     gatsby-module-loader "^1.0.5"
+    gatsby-react-router-scroll "^1.0.1"
     glob "^7.1.1"
     graphql "^0.10.3"
     graphql-relay "^0.5.1"
@@ -3598,7 +3607,6 @@ gatsby@^1.9.21:
     react-hot-loader "^3.0.0-beta.6"
     react-router "^4.1.1"
     react-router-dom "^4.1.1"
-    react-router-scroll ytase/react-router-scroll#build
     redux "^3.6.0"
     relay-compiler "^1.1.0"
     remote-redux-devtools "^0.5.7"
@@ -5086,12 +5094,6 @@ lodash-es@^4.2.1:
 lodash-id@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/lodash-id/-/lodash-id-0.14.0.tgz#baf48934e543a1b5d6346f8c84698b1a8c803896"
-
-lodash-webpack-plugin@^0.11.4:
-  version "0.11.4"
-  resolved "https://registry.yarnpkg.com/lodash-webpack-plugin/-/lodash-webpack-plugin-0.11.4.tgz#6c3ecba3d4b8d24b53940b63542715c5ed3c4ac5"
-  dependencies:
-    lodash "^4.17.4"
 
 lodash._basecopy@^3.0.0:
   version "3.0.1"
@@ -6908,7 +6910,7 @@ postcss@^6.0.1:
     source-map "^0.5.6"
     supports-color "^4.2.1"
 
-preact-compat@^3.16.0:
+preact-compat@^3.17.0:
   version "3.17.0"
   resolved "https://registry.yarnpkg.com/preact-compat/-/preact-compat-3.17.0.tgz#528cfdfc301190c1a0f47567336be1f4be0266b3"
   dependencies:
@@ -6928,9 +6930,9 @@ preact-transition-group@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/preact-transition-group/-/preact-transition-group-1.1.1.tgz#f0a49327ea515ece34ea2be864c4a7d29e5d6e10"
 
-preact@^8.1.0:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-8.2.1.tgz#674243df0c847884d019834044aa2fcd311e72ed"
+preact@^8.2.5:
+  version "8.2.5"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-8.2.5.tgz#cbfa3962a8012768159f6d01d46f9c1eb3213c0a"
 
 prepend-http@^1.0.0, prepend-http@^1.0.1:
   version "1.0.4"
@@ -6941,8 +6943,8 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
 prettier@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.6.1.tgz#850f411a3116226193e32ea5acfc21c0f9a76d7d"
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.7.0.tgz#47481588f41f7c90f63938feb202ac82554e7150"
 
 pretty-bytes@^4.0.2:
   version "4.0.2"
@@ -7180,13 +7182,6 @@ react-router-dom@^4.1.1:
     loose-envify "^1.3.1"
     prop-types "^15.5.4"
     react-router "^4.1.1"
-
-react-router-scroll@ytase/react-router-scroll#build:
-  version "0.4.1"
-  resolved "https://codeload.github.com/ytase/react-router-scroll/tar.gz/991ecddb08885e1fb80ec1e9dbf3a35844b7d4cd"
-  dependencies:
-    scroll-behavior "^0.9.1"
-    warning "^3.0.0"
 
 react-router@^4.1.1:
   version "4.1.2"
@@ -7680,9 +7675,15 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.6, rimraf@^2.2.8, rimraf@^2.3.2, rimraf@^2.4.4, rimraf@^2.5.0, rimraf@^2.5.1, rimraf@^2.5.4, rimraf@^2.6.1:
+rimraf@2, rimraf@^2.2.6, rimraf@^2.2.8, rimraf@^2.3.2, rimraf@^2.4.4, rimraf@^2.5.0, rimraf@^2.5.1, rimraf@^2.5.4:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
+  dependencies:
+    glob "^7.0.5"
+
+rimraf@^2.6.1:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
   dependencies:
     glob "^7.0.5"
 
