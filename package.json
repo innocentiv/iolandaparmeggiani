@@ -1,0 +1,36 @@
+{
+  "name": "iolandaparmeggiani",
+  "description": "personal website and portfolio",
+  "version": "1.0.0",
+  "author": "Valerio Innocenti Sedili <vinnocenti@outlook.it>",
+  "dependencies": {
+    "gatsby": "^1.9.21",
+    "gatsby-link": "^1.6.16",
+    "gatsby-plugin-manifest": "^1.0.7",
+    "gatsby-plugin-offline": "^1.0.9",
+    "gatsby-plugin-preact": "^1.0.6",
+    "gatsby-plugin-react-helmet": "^1.0.6",
+    "gatsby-plugin-sass": "^1.0.10",
+    "gatsby-remark-copy-linked-files": "^1.5.7",
+    "gatsby-remark-images": "^1.5.10",
+    "gatsby-source-filesystem": "^1.4.11",
+    "gatsby-transformer-remark": "^1.7.6"
+  },
+  "keywords": [
+    "blog",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"src/**/*.js\" \"*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf public .cache"
+  },
+  "devDependencies": {
+    "prettier": "^1.6.1",
+    "rimraf": "^2.6.1"
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem; 
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    color:gray;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0px 1.0875rem 1.45rem;     
+}
