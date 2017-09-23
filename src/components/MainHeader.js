@@ -6,7 +6,7 @@ import styles from '../css/main.module.css';
 const MainHeader = () => (
   <header className={styles.header}>
     <GatsbyLink to="/" className={styles.link}>
-      <h1 className={styles.title}>vinnocenti</h1>
+      <h1 className={styles.title}>Iolanda Parmeggiani</h1>
     </GatsbyLink>
   </header>
 );

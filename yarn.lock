@@ -1167,11 +1167,7 @@ babel-types@^6.19.0, babel-types@^6.24.1, babel-types@^6.25.0, babel-types@^6.26
     lodash "^4.17.4"
     to-fast-properties "^1.0.3"
 
-babylon@6.17.3:
-  version "6.17.3"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.3.tgz#1327d709950b558f204e5352587fd0290f8d8e48"
-
-babylon@^6.17.2, babylon@^6.17.3, babylon@^6.18.0:
+babylon@6.18.0, babylon@^6.17.2, babylon@^6.17.3, babylon@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
 
@@ -2834,10 +2830,6 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-eslint-config-fbjs@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-fbjs/-/eslint-config-fbjs-1.1.1.tgz#dd29f8d912e8a755257e9eeef00bae1cce57f73a"
-
 esniff@^1.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/esniff/-/esniff-1.1.0.tgz#c66849229f91464dede2e0d40201ed6abf65f2ac"
@@ -3439,9 +3431,9 @@ gatsby-plugin-sass@^1.0.10:
     sass-loader "^4.1.1"
     webpack "^1.13.3"
 
-gatsby-plugin-sharp@^1.6.7:
-  version "1.6.7"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.7.tgz#688e22dfc6f3341fcb8efebed1bae5e05ff02fd4"
+gatsby-plugin-sharp@^1.6.8:
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.8.tgz#289f11f3f54c5cdd51f78f17403b8f318fd68cfa"
   dependencies:
     async "^2.1.2"
     babel-runtime "^6.26.0"
@@ -3473,12 +3465,12 @@ gatsby-remark-copy-linked-files@^1.5.7:
     unist-util-visit "^1.1.1"
 
 gatsby-remark-images@^1.5.10:
-  version "1.5.11"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.11.tgz#6088d4903e16969bfacc097fe951569937c6cf64"
+  version "1.5.12"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.12.tgz#0b28a4317d38fdef34394e1ac877e974eb26e66b"
   dependencies:
     babel-runtime "^6.26.0"
     cheerio "^1.0.0-rc.2"
-    gatsby-plugin-sharp "^1.6.7"
+    gatsby-plugin-sharp "^1.6.8"
     image-size "^0.5.1"
     is-relative-url "^2.0.0"
     lodash "^4.17.4"
@@ -3501,8 +3493,8 @@ gatsby-source-filesystem@^1.4.11:
     slash "^1.0.0"
 
 gatsby-transformer-remark@^1.7.6:
-  version "1.7.9"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.9.tgz#fe1d2867aca54c62e9bef33c73cc19e2a90674e0"
+  version "1.7.11"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.11.tgz#799c2ac2ad1c0b9c8c9b5fbab91e766b157b0735"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -3518,8 +3510,8 @@ gatsby-transformer-remark@^1.7.6:
     unist-util-visit "^1.1.1"
 
 gatsby@^1.9.21:
-  version "1.9.40"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.40.tgz#e4c713ec9ad849d4f5e455e595f941abd5a05ede"
+  version "1.9.43"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.43.tgz#e4a495f424f7ae4dc676701d56d47d3512cd374d"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -3608,7 +3600,7 @@ gatsby@^1.9.21:
     react-router "^4.1.1"
     react-router-dom "^4.1.1"
     redux "^3.6.0"
-    relay-compiler "^1.1.0"
+    relay-compiler "1.3.0"
     remote-redux-devtools "^0.5.7"
     resolve-cwd "^2.0.0"
     sift "^3.2.6"
@@ -7425,9 +7417,9 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
-relay-compiler@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/relay-compiler/-/relay-compiler-1.2.0.tgz#5b216021eea030ac518b7566bf165bfa4e69d18b"
+relay-compiler@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/relay-compiler/-/relay-compiler-1.3.0.tgz#c8df1fde2439d14beeb37be69eea48952927af68"
   dependencies:
     babel-generator "6.25.0"
     babel-polyfill "^6.23.0"
@@ -7435,24 +7427,28 @@ relay-compiler@^1.1.0:
     babel-runtime "^6.23.0"
     babel-traverse "6.25.0"
     babel-types "6.25.0"
-    babylon "6.17.3"
+    babylon "6.18.0"
     chalk "^1.1.3"
-    eslint-config-fbjs "^1.1.1"
     fast-glob "^1.0.1"
     fb-watchman "^2.0.0"
     fbjs "^0.8.1"
     graphql "^0.10.5"
     immutable "^3.8.1"
-    relay-runtime "1.2.0"
+    relay-runtime "1.3.0"
     signedsource "^1.0.0"
     yargs "^7.0.2"
 
-relay-runtime@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/relay-runtime/-/relay-runtime-1.2.0.tgz#d2ed002c9accaa2f1dfdb96f02d0dcd0b40c4376"
+relay-debugger-react-native-runtime@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/relay-debugger-react-native-runtime/-/relay-debugger-react-native-runtime-0.0.9.tgz#f9da4bb1f4f4a62189775d3850a18df1d528a4f1"
+
+relay-runtime@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/relay-runtime/-/relay-runtime-1.3.0.tgz#ec59db0ade1f665b37ff25f72cec4113b9e2cb8b"
   dependencies:
     babel-runtime "^6.23.0"
     fbjs "^0.8.1"
+    relay-debugger-react-native-runtime "^0.0.9"
 
 remark-parse@^3.0.0:
   version "3.0.1"
