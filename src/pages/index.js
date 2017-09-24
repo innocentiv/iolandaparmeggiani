@@ -4,25 +4,21 @@ import Helmet from 'react-helmet';
 
 import Link from '../components/Link';
 
-import '../css/index.css';
+import styles from '../css/index.module.css';
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
+
   return (
-    <div className="blog-posts">
+    <div className={styles.postsContainer}>
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
-            <div className="blog-post-preview" key={post.id}>
-              <h1 className="title">
-                <GatsbyLink to={post.frontmatter.path}>
-                  {post.frontmatter.title}
-                </GatsbyLink>
-              </h1>
-              <h2 className="date">{post.frontmatter.date}</h2>
-              <p>{post.excerpt}</p>
-              <Link to={post.frontmatter.path}>Read more</Link>
+            <div className={styles.thumbnailContainer} key={post.id}>
+              <GatsbyLink to={post.frontmatter.path}>
+                <img className={styles.thumbnail} alt={post.frontmatter.title} src={post.frontmatter.thumbnail.childImageSharp.responsiveSizes.src} />
+              </GatsbyLink>
             </div>
           );
         })}
@@ -31,19 +27,25 @@ export default function Index({ data }) {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
+query IndexQuery {
+  allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          path
+          thumbnail {
+            childImageSharp {
+              responsiveSizes(maxWidth: 400) {
+                src
+                srcSet
+              }
+            }
           }
         }
       }
     }
   }
+}
 `;

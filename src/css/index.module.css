@@ -1,0 +1,16 @@
+.postsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.thumbnailContainer {
+  width:31.3%;
+  padding-bottom: 3%;
+}
+
+.thumbnail {
+  width: 100%;
+  display: block;
+}
