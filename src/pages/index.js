@@ -16,8 +16,9 @@ export default function Index({ data }) {
         .map(({ node: post }) => {
           return (
             <div className={styles.thumbnailContainer} key={post.id}>
-              <GatsbyLink to={post.frontmatter.path}>
+              <GatsbyLink className={styles.thumbnailLink} to={post.frontmatter.path}>
                 <img className={styles.thumbnail} alt={post.frontmatter.title} src={post.frontmatter.thumbnail.childImageSharp.responsiveSizes.src} />
+                <h2>{post.frontmatter.title}</h2>
               </GatsbyLink>
             </div>
           );
