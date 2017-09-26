@@ -10,9 +10,8 @@
   padding-bottom: 10%;
 }
 
-.thumbnail {
+.thumbnailImage {
   width: 100%;
-  display: block;
 }
 
 .thumbnailLink {

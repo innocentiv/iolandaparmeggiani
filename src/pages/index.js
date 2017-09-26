@@ -1,13 +1,14 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
 import Helmet from 'react-helmet';
-
 import Link from '../components/Link';
+import ResponsiveImage from '../components/ResponsiveImage';
 
 import styles from '../css/index.module.css';
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
+  const imageWidth = 300;
 
   return (
     <div className={styles.postsContainer}>
@@ -17,7 +18,11 @@ export default function Index({ data }) {
           return (
             <div className={styles.thumbnailContainer} key={post.id}>
               <GatsbyLink className={styles.thumbnailLink} to={post.frontmatter.path}>
-                <img className={styles.thumbnail} alt={post.frontmatter.title} src={post.frontmatter.thumbnail.childImageSharp.responsiveSizes.src} />
+                <ResponsiveImage 
+                  className={styles.thumbnailLink}
+                  image={post.frontmatter.thumbnail.childImageSharp.responsiveSizes}
+                  alt={post.frontmatter.title}
+                />
                 <h2>{post.frontmatter.title}</h2>
               </GatsbyLink>
             </div>
@@ -41,6 +46,8 @@ query IndexQuery {
               responsiveSizes(maxWidth: 400) {
                 src
                 srcSet
+                base64
+                aspectRatio
               }
             }
           }
