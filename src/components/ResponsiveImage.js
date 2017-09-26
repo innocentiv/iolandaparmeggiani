@@ -2,10 +2,11 @@ import React from 'react';
 
 export default function ResponsiveImage({ className, image, alt }) {
   return (
-    <div
+    <span
       className={className}
       style={{
         position: 'relative',
+        display: 'inline-block',
         paddingTop: `${100 * image.aspectRatio}%`,
         backgroundImage: `url(${image.base64})`,
         backgroundSize: 'cover'
@@ -21,6 +22,6 @@ export default function ResponsiveImage({ className, image, alt }) {
           display: 'block',
         }}
       />
-    </div>
+    </span>
   );
 }
