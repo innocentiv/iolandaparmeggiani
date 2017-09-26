@@ -7,7 +7,7 @@ import MainContainer from '../components/MainContainer'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="vinnocenti"
+      title="Iolanda Parmeggiani"
       meta={[
         {
           name: 'description',
