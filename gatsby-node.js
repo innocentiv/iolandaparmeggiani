@@ -1,7 +1,7 @@
 const path = require('path');
 
 const createTagPages = (createPage, posts) => {
-  const tagTemplate = path.resolve('src/templates/tags.js');
+  const gridTemplate = path.resolve('src/templates/grid.js');
   const tags = {};
 
   posts.forEach(({ node }) => {
@@ -17,7 +17,7 @@ const createTagPages = (createPage, posts) => {
 
   createPage({
     path: `/`,
-    component: tagTemplate,
+    component: gridTemplate,
     context: {
       posts: posts
     },
@@ -26,7 +26,7 @@ const createTagPages = (createPage, posts) => {
   Object.keys(tags).forEach(tagName => {
     createPage({
       path: `/${tagName}`,
-      component: tagTemplate,
+      component: gridTemplate,
       context: {
         posts: tags[tagName]
       },
@@ -35,13 +35,14 @@ const createTagPages = (createPage, posts) => {
 };
 
 const createPages = (createPage, posts) => {
-  const blogPostTemplate = path.resolve('src/templates/blog-post.js');
+  const postTemplate = path.resolve('src/templates/post.js');
+
   posts.forEach(({ node }, index) => {
     const prev = index === 0 ? false : posts[index - 1].node;
     const next = index === posts.length - 1 ? false : posts[index + 1].node;
     createPage({
       path: node.frontmatter.path,
-      component: blogPostTemplate,
+      component: postTemplate,
       context: {
         prev,
         next,
@@ -56,14 +57,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 1000
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           html
           id
-          timeToRead
           frontmatter {
             date
             path
