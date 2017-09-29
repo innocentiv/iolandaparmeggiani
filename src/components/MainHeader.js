@@ -8,7 +8,15 @@ const MainHeader = () => (
     <GatsbyLink to="/" className={styles.link}>
       <h1 className={styles.title}>Iolanda Parmeggiani</h1>
     </GatsbyLink>
+    <ul>
+        <GatsbyLink to="/illustration/">Illustration</GatsbyLink>
+        <GatsbyLink to="/graphic/">Graphic</GatsbyLink>
+        <GatsbyLink to="/video/">Video</GatsbyLink>
+        <GatsbyLink to="/about/">About</GatsbyLink>
+    </ul>
   </header>
 );
 
 export default MainHeader;
+
+

@@ -1,46 +1,58 @@
 const path = require('path');
 
-const createTagPages = (createPage, edges) => {
+const createTagPages = (createPage, posts) => {
   const tagTemplate = path.resolve('src/templates/tags.js');
-  const posts = {};
+  const tags = {};
 
-  edges.forEach(({ node }) => {
+  posts.forEach(({ node }) => {
     if (node.frontmatter.tags) {
       node.frontmatter.tags.forEach(tag => {
-        if (!posts[tag]) {
-          posts[tag] = [];
+        if (!tags[tag]) {
+          tags[tag] = [];
         }
-        posts[tag].push(node);
+        tags[tag].push({node});
       });
     }
   });
 
   createPage({
-    path: '/tags',
+    path: `/`,
     component: tagTemplate,
     context: {
-      posts,
+      posts: posts
     },
   });
 
-  Object.keys(posts).forEach(tagName => {
-    const post = posts[tagName];
+  Object.keys(tags).forEach(tagName => {
     createPage({
-      path: `/tags/${tagName}`,
+      path: `/${tagName}`,
       component: tagTemplate,
       context: {
-        posts,
-        post,
-        tag: tagName,
+        posts: tags[tagName]
       },
     });
   });
 };
 
+const createPages = (createPage, posts) => {
+  const blogPostTemplate = path.resolve('src/templates/blog-post.js');
+  posts.forEach(({ node }, index) => {
+    const prev = index === 0 ? false : posts[index - 1].node;
+    const next = index === posts.length - 1 ? false : posts[index + 1].node;
+    createPage({
+      path: node.frontmatter.path,
+      component: blogPostTemplate,
+      context: {
+        prev,
+        next,
+      },
+    });
+  });
+}
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  const blogPostTemplate = path.resolve('src/templates/blog-post.js');
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -57,6 +69,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path
             tags
             title
+            thumbnail {
+              childImageSharp {
+                responsiveSizes(maxWidth: 400) {
+                  src
+                  srcSet
+                  base64
+                  aspectRatio
+                }
+              }
+            }
           }
         }
       }
@@ -69,20 +91,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     createTagPages(createPage, posts);
-
-    // Create pages for each markdown file.
-    posts.forEach(({ node }, index) => {
-      const prev = index === 0 ? false : posts[index - 1].node;
-      const next = index === posts.length - 1 ? false : posts[index + 1].node;
-      createPage({
-        path: node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {
-          prev,
-          next,
-        },
-      });
-    });
+    createPages(createPage, posts);
 
     return posts;
   });
