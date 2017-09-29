@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 
 import Link from '../components/Link';
 import Tags from '../components/Tags';
+import VimeoVideo from '../components/VimeoVideo';
 
 import '../css/blog-post.css';
 
@@ -15,6 +16,7 @@ export default function Template({ data, pathContext }) {
       <div className="blog-post">
         <h1 className="title">{post.frontmatter.title}</h1>
         <h2 className="date">{post.frontmatter.date}</h2>
+        <VimeoVideo videoId={post.frontmatter.videoId}/>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -46,6 +48,7 @@ export const pageQuery = graphql`
         path
         tags
         title
+        videoId
       }
     }
   }

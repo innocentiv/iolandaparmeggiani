@@ -3,8 +3,8 @@ import Link from 'gatsby-link';
 
 const SecondPage = () => (
   <div>
-    <h1>Hi more people</h1>
-    <p>Welcome to page 2</p>
+    <h1>About</h1>
+    <p>Hello, it's me</p>
     <Link to="/">Go back to the homepage</Link>
   </div>
 );

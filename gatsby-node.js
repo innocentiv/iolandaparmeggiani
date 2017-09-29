@@ -67,6 +67,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path
             tags
             title
+            videoId
             thumbnail {
               childImageSharp {
                 responsiveSizes(maxWidth: 400) {
