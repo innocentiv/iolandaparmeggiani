@@ -27,6 +27,7 @@ h4 {
   font-family: 'Zilla Slab';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Zilla Slab'), local('ZillaSlab-Regular'),
     url('../fonts/zilla-slab-v3-latin-regular.woff2') format('woff2'),
     url('../fonts/zilla-slab-v3-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -37,6 +38,7 @@ h4 {
   font-family: 'Zilla Slab';
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
   src: local('Zilla Slab Italic'), local('ZillaSlab-Italic'),
     url('../fonts/zilla-slab-v3-latin-italic.woff2') format('woff2'),
     url('../fonts/zilla-slab-v3-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -47,6 +49,7 @@ h4 {
   font-family: 'Zilla Slab';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local('Zilla Slab Bold'), local('ZillaSlab-Bold'),
     url('../fonts/zilla-slab-v3-latin-700.woff2') format('woff2'),
     url('../fonts/zilla-slab-v3-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -57,6 +60,7 @@ h4 {
   font-family: 'Libby';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/Libby-Regular.woff2') format('woff2'),
     url('../fonts/Libby-Regular.woff') format('woff');
 }
@@ -66,6 +70,7 @@ h4 {
   font-family: 'Libby';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('../fonts/Libby-Bold.woff2') format('woff2'),
     url('../fonts/Libby-Bold.woff') format('woff');
 }
