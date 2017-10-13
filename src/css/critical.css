@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url(../images/paper_bg.png);
+  background: #e2dfd7 url(../images/paper_bg.png);
 }
 
 a {
