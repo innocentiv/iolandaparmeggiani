@@ -4,6 +4,10 @@ import Helmet from 'react-helmet';
 import MainHeader from '../components/MainHeader';
 import MainContainer from '../components/MainContainer'
 
+import '../css/critical.css';
+import '../css/fonts.css';
+
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
