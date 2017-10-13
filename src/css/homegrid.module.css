@@ -16,8 +16,13 @@
 
 .thumbnailLink {
   text-decoration: none;
-  color: #353535;
+  color: #616161;
   text-align: center;
+}
+
+.thumbnailLink h2 {
+  font-size: 0.8em;
+  font-weight: normal;
 }
 
 @media (min-width: 425px) {

@@ -1,5 +1,18 @@
 body {
   font-family: Zilla Slab;
+  font-size: 14px;
+}
+
+@media (min-width:620px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1024px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 h1,
