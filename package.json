@@ -14,7 +14,7 @@
     "gatsby-remark-copy-linked-files": "^1.5.7",
     "gatsby-remark-images": "^1.5.10",
     "gatsby-source-filesystem": "^1.4.11",
-    "gatsby-transformer-remark": "^1.7.6",
+    "gatsby-transformer-remark": "^2.1.6",
     "gatsby-transformer-sharp": "^1.6.6"
   },
   "keywords": [
