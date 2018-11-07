@@ -31,7 +31,7 @@
     "clean": "rimraf public .cache"
   },
   "devDependencies": {
-    "prettier": "^1.6.1",
+    "prettier": "^1.15.1",
     "rimraf": "^2.6.1"
   }
 }
