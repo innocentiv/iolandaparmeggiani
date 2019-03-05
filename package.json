@@ -10,7 +10,7 @@
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-preact": "^2.0.10",
     "gatsby-plugin-react-helmet": "^3.0.8",
-    "gatsby-plugin-sass": "^1.0.10",
+    "gatsby-plugin-sass": "^2.0.10",
     "gatsby-remark-copy-linked-files": "^1.5.7",
     "gatsby-remark-images": "^1.5.10",
     "gatsby-source-filesystem": "^1.4.11",
