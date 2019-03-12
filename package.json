@@ -5,7 +5,7 @@
   "author": "Valerio Innocenti Sedili <vinnocenti@outlook.it>",
   "dependencies": {
     "gatsby": "^1.9.21",
-    "gatsby-link": "^1.6.16",
+    "gatsby-link": "^2.0.15",
     "gatsby-plugin-manifest": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.9",
     "gatsby-plugin-preact": "^1.0.6",
