@@ -15,7 +15,7 @@
     "gatsby-remark-images": "^3.0.11",
     "gatsby-source-filesystem": "^2.0.31",
     "gatsby-transformer-remark": "^2.3.10",
-    "gatsby-transformer-sharp": "^1.6.6"
+    "gatsby-transformer-sharp": "^2.1.18"
   },
   "keywords": [
     "blog",
